@@ -66,7 +66,8 @@ export default function Page2(
 
 			<Alert type="info">
 				<p>
-					You cannot change
+					You cannot change the colour of primary text and icons; this must be
+					white.
 				</p>
 			</Alert>
 
