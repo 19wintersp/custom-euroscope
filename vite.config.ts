@@ -8,4 +8,5 @@ export default defineConfig({
     rust(),
   ],
   publicDir: "pub/",
+  base: "/custom-euroscope/",
 });
