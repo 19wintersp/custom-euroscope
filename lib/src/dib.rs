@@ -154,9 +154,9 @@ pub fn patch(buffer: &mut [u8], pixels: &[u8]) -> Result<()> {
 		}
 
 		let row = (width * bpp as usize).next_multiple_of(32) / 8;
-		let mut base_wr = base_wr + row * height;
+		let mut base_wr = 40 + palette_size as usize * 4 + row * height;
 
-		for row_indices in indices.chunks(width).rev() {
+		for row_indices in indices.chunks(width)/* .rev() */ {
 			base_wr -= row;
 			let mut bits = BitVec::new();
 
