@@ -1,0 +1,14 @@
+.eyedrop-input {
+	--theme1: var(--bg2);
+	--theme2: var(--bg3);
+
+	box-sizing: border-box;
+	height: 25px;
+	width: 25px;
+	padding: 0px;
+	border: none !important;
+	outline: none !important;
+
+	border-radius: 5px;
+	cursor: pointer;
+}
