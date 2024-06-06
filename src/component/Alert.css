@@ -1,0 +1,38 @@
+.alert {
+	padding: 9px;
+	border: 1px solid var(--alert2);
+	border-radius: 5px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	background-color: var(--alert1);
+}
+
+.alert.info {
+	--alert1: var(--bgi);
+	--alert2: var(--fgi);
+}
+
+.alert.caut {
+	--alert1: var(--bgc);
+	--alert2: var(--fgc);
+}
+
+.alert.warn {
+	--alert1: var(--bgw);
+	--alert2: var(--fgw);
+}
+
+.alert-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	color: var(--fg1);
+}
+
+.alert-header > h2 {
+	font-size: 16px;
+}

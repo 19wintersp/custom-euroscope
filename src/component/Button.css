@@ -1,0 +1,57 @@
+.button {
+	--theme1: var(--bg2);
+	--theme2: var(--bg3);
+
+	box-sizing: border-box;
+	height: 30px;
+	padding: 0px 8px;
+	border: 2px solid var(--theme1);
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+
+	border-radius: 5px;
+	background-color: var(--theme1);
+	cursor: pointer;
+
+	font-family: inherit;
+	font-size: 14px;
+
+	transition: border 100ms;
+}
+
+.button:hover, .button:focus {
+	outline: none;
+	border-color: var(--theme2);
+}
+
+.button:active {
+	--theme1: var(--bg3);
+}
+
+.button.primary {
+	--theme1: var(--th1);
+	--theme2: var(--th2);
+
+	color: white;
+}
+
+.button.primary:active {
+	--theme1: var(--th2);
+}
+
+.button.compact {
+	height: 25px;
+	padding: 0px 5px;
+}
+
+.button.square {
+	width: 30px;
+	padding: 0px;
+}
+
+.button.compact.square {
+	width: 25px;
+}

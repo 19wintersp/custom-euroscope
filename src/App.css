@@ -1,0 +1,17 @@
+main {
+	width: 600px;
+	margin: 40px auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.prev-next-row {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.prev-next-row button {
+	width: 110px;
+}

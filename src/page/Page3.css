@@ -1,0 +1,86 @@
+.page3-customise-box {
+	padding: 10px 0px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.page3-customise-box > :not(:last-child) {
+	margin: 0px 10px;
+}
+
+.page3-customise-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.page3-customise {
+	padding: 10px;
+
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.page3-customise:not(:first-child) {
+	border-top: 1px solid var(--bg3);
+}
+
+.page3-customise > :last-child {
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+
+.page3-customise-thumb {
+	width: 24px;
+	height: 24px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.page3-customise-thumb img {
+	max-width: 24px;
+}
+
+.page3-customise-expanded {
+	padding: 10px;
+	padding-top: 0px;
+
+	display: flex;
+	gap: 10px;
+}
+
+.page3-customise-expanded > :first-child {
+	box-sizing: border-box;
+	min-height: 110px;
+	padding: 25px 0px;
+	border-radius: 5px;
+
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+
+	background-color: var(--fg1);
+}
+
+.page3-customise-expanded > :first-child img {
+	max-width: 400px;
+}
+
+.page3-customise-expanded > :last-child {
+	width: 115px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 10px;
+}
+
+.page3-customise-expanded > :last-child button {
+	justify-content: flex-start;
+}

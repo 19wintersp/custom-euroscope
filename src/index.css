@@ -1,0 +1,98 @@
+:root {
+	--bg1: #ffffff;
+	--bg2: #f5f5f5;
+	--bg3: #e5e5e5;
+	--bgw: #fef2f2;
+	--bgc: #fffbeb;
+	--bgi: #eff6ff;
+
+	--fg1: #171717;
+	--fg2: #525252;
+	--fg3: #d4d4d4;
+	--fgw: #f87171;
+	--fgc: #fbbf24;
+	--fgi: #60a5fa;
+
+	--th1: #2563eb;
+	--th2: #60a5fa;
+
+	font-family: Inter, sans-serif;
+	font-weight: 400;
+
+	color-scheme: light;
+	background-color: var(--bg1);
+	color: var(--fg2);
+}
+
+body {
+	margin: 0px;
+}
+
+h2, h3 {
+	margin: 0px;
+
+	font-size: 16px;
+	font-weight: 500;
+
+	color: var(--fg1);
+}
+
+p {
+	margin: 0px;
+
+	line-height: 1.5;
+}
+
+input::file-selector-button, select {
+	--theme1: var(--bg2);
+	--theme2: var(--bg3);
+
+	box-sizing: border-box;
+	height: 27.5px;
+	padding: 3px 8px;
+	border: 2px solid var(--theme1);
+
+	border-radius: 5px;
+	background-color: var(--theme1);
+	cursor: pointer;
+
+	font-family: inherit;
+	font-size: 14px;
+}
+
+select {
+	width: 150px;
+}
+
+input::file-selector-button:hover, input::file-selector-button:focus,
+select:hover, select:focus {
+	outline: none;
+	border-color: var(--theme2);
+}
+
+.box {
+	padding: 10px;
+}
+
+.box.spaced {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.hide {
+	display: none !important;
+}
+
+.row {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.solitary {
+	padding: 40px;
+
+	display: flex;
+	justify-content: center;
+}

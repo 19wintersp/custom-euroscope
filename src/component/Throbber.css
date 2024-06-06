@@ -1,0 +1,10 @@
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to   { transform: rotate(360deg); }
+}
+
+.throbber {
+	line-height: 0px;
+
+	animation: spin 1s linear 0s infinite;
+}
