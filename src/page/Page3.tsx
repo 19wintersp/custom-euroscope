@@ -160,7 +160,7 @@ function Customise(
 			} else {
 				const ctx = useContext(LibContext)!;
 
-				const svg = await fetch(`/bitmap/${theme}/${props.image.id}.svg`);
+				const svg = await fetch(`bitmap/${theme}/${props.image.id}.svg`);
 				if (svg.ok) {
 					return await renderSvg(await svg.text(), {
 						bg1: ctx()!.map![0]!,
