@@ -1,0 +1,7 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:theme="http://19wintersp.github.io/custom-euroscope/theme">
+	<path fill="#131313" theme:fill="bg2" stroke="none" d="M0 0 L1 0 L1 22 L0 22 ZM1 0 L23 0 L23 1 L1 1 Z" />
+	<path fill="#4b4b4b" theme:fill="bg4" stroke="none" d="M1 1 L23 1 L23 2 L1 2 ZM1 2 L23 2 L23 22 L1 22 Z" />
+	<path fill="#ffffff" theme:fill="fg1" stroke="none" d="M13.1667 8.9561 L19.8333 13.1666 L19.8333 14.8333 L13.1667 12.728 L13.1667 17.1944 L15.6667 18.5833 L15.6667 19.8333 L11.9167 19 L8.16667 19.8333 L8.16667 18.5833 L10.6667 17.1944 L10.6667 12.728 L4 14.8333 L4 13.1666 L10.6667 8.9561 L10.6667 4.41663 C10.6667 3.72627 11.2263 3.16663 11.9167 3.16663 C12.607 3.16663 13.1667 3.72627 13.1667 4.41663 L13.1667 8.9561 Z" />
+	<path fill="#131313" theme:fill="bg2" stroke="none" d="M23 0 L24 0 L24 22 L23 22 ZM0 22 L24 22 L24 23 L0 23 Z" />
+	<path fill="#000000" theme:fill="bg1" stroke="none" d="M0 23 L24 23 L24 24 L0 24 Z" />
+</svg>
