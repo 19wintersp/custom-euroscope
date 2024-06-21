@@ -55,7 +55,9 @@ export default function Page3(
 		<>
 			<div class="box">
 				<p>
-					I don't know what to write here.
+					The EuroScope executable contains many embedded bitmaps which are used
+					for buttons and other UI components. To update these icons to match
+					the new colours, choose one of the base icon sets below.
 				</p>
 			</div>
 
@@ -66,11 +68,18 @@ export default function Page3(
 				</p>
 			</Alert>
 
+			<Alert type="warn">
+				<p>
+					Please wait for a few seconds after selecting a new icon set to allow
+					the icons to render before pressing "Continue".
+				</p>
+			</Alert>
+
 			<div class="box spaced">
 				<h2>Base icon set</h2>
 
 				<select onInput={({ currentTarget: s }) => setTheme(s.value)}>
-					<option value="none">None</option>
+					<option value="none">None (keep as-is)</option>
 					<option value="vector">Vector</option>
 				</select>
 			</div>
