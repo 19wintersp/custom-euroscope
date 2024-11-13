@@ -70,6 +70,10 @@ export default function Page3(
 
 			<Alert type="warn">
 				<p>
+					If you wish for the icons and UI elements within EuroScope to properly
+					match your selected theme, you must select "Vector" as your icon set.
+				</p>
+				<p>
 					Please wait for a few seconds after selecting a new icon set to allow
 					the icons to render before pressing "Continue".
 				</p>
