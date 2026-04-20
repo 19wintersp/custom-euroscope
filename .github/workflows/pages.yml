@@ -1,0 +1,44 @@
+name: Build and deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-deploy:
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+
+    permissions:
+      pages: write
+      id-token: write
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install JS dependencies
+      run: yarn
+
+    - name: Install Cargo targets
+      run: rustup target add wasm32-unknown-unknown
+
+    - name: Install wasm-bindgen
+      run: cargo install wasm-bindgen-cli --version 0.2.100
+
+    - name: Build
+      run: yarn build
+
+    - name: Configure GitHub Pages
+      uses: actions/configure-pages@v6
+
+    - name: Upload artefact
+      uses: actions/upload-pages-artifact@v5
+      with:
+        path: dist
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v5
