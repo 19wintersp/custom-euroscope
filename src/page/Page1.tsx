@@ -1,10 +1,12 @@
 import { Show, createSignal, useContext } from "solid-js";
 
+import "./Page1.css";
+
 import { LibContext } from "../lib/lib";
 
 import Alert from "../component/Alert";
 import Button from "../component/Button";
-import { ArrowRight } from "../component/Icon";
+import { ArrowRight, External } from "../component/Icon";
 import Throbber from "../component/Throbber";
 
 export default function Page1(
@@ -44,9 +46,16 @@ export default function Page1(
 
 			<Alert type="info">
 				<p>
-					By the magic of WebAssembly, all of the processing happens locally
-					within your web browser, and your uploaded files will not leave your
-					computer.
+					All processing happens locally within your web browser, and your
+					uploaded files will not leave your computer.{" "}
+					<a
+						id="source-link"
+						href="https://github.com/19wintersp/custom-euroscope"
+						target="_blank"
+					>
+						<span>Source code</span>
+						<External />
+					</a>
 				</p>
 			</Alert>
 

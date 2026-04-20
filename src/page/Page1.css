@@ -1,0 +1,8 @@
+#source-link {
+	display: inline-flex;
+	align-items: center;
+	gap: .5ch;
+
+	color: var(--th1);
+	text-decoration: none;
+}
